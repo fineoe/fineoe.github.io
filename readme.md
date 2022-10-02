@@ -1,8 +1,8 @@
 # [React]() ![](https://github.com/facebook/react/blob/main/LICENSE) ![](https://www.npmjs.com/package/react)![](https://circleci.com/gh/facebook/react) ![](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 React id a JavScript library for buiding user interfaces.
-* **Declarative:**React makes it painless to create interactive Uls.Desogn simple views for each state in your application,and React will efficiently update and render just the right componentd when your data changes.Declarative views make your code more predictable,simpler to understans,and easier to debug.
-* **Component -Basef:**Build encapsulated components that manage their own state,then compose them to make complex Uls.Since component logic is writton inJavaScript instead of templates,you can easily pass rich sata through your app and keep the state out of the DOM.
-* **Learn Once,Write Anywhere:**We don't make assumptions about the rest of your technology stack,so you can develop new features in React without rewriting existing code.React can also render on the server using Node and power mobile apps using [React Native]().
+* **Declarative:** React makes it painless to create interactive Uls.Desogn simple views for each state in your application,and React will efficiently update and render just the right componentd when your data changes.Declarative views make your code more predictable,simpler to understans,and easier to debug.
+* **Component -Basef:** Build encapsulated components that manage their own state,then compose them to make complex Uls.Since component logic is writton inJavaScript instead of templates,you can easily pass rich sata through your app and keep the state out of the DOM.
+* **Learn Once,Write Anywhere:** We don't make assumptions about the rest of your technology stack,so you can develop new features in React without rewriting existing code.React can also render on the server using Node and power mobile apps using [React Native]().
 [Learn how to use React in your project]().
 # Installation
 React has been designed for gradual adoption from the sstart,and **you can use as littlef or as much React as you need:**
