@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+  <head><!--放在head标签里的内容将不在浏览器里显示-->
+  <h1>hi work!我是标题</h1>
+  <base href="https://www.jd.com/jsdhj/jsjhd/" target="_blank">
+  <!--base标签里的地址是基于整个浏览器文件的相对地址
+      target属性也会成为跳转页面的默认属性-->
+</head>
+<!--deprecated 不推荐使用
+    obsolete 已废弃-->
+<body>
+  <input type="text" tabindex="1" name="wd">
+  <input type="text" tabindex="3" name="mz">
+  <input type="text" tabindex="2" name="xb">
+  <input type="hidden" value="8" name="dd">
+  <input type="submit" value="输入">
+  <p>段落Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio suscipit aliquid unde? Architecto sapiente, dignissimos harum reiciendis expedita officia alias numquam facere. Tempora, reprehenderit alias perspiciatis in excepturi aperiam!</p>
+
+  语义化就是由于某种原因,需要与普通文本区分开来的文本<br />
+  <strong>加粗</strong><!--加粗强调(有语义)-->
+  <b>粗体</b><!--只是样式加粗 没有语义-->
+
+  <i>斜体</i><!--icon图标(也可以用i标签表示图标)-->
+  <em>斜体</em><!--强调(有语义)-->
+  <!-- ctrl+/ 将代码注释掉 -->
+  <u>我是下划线显示</u>
+
+  <!--html实体(在页面显示符号实体;eg:<==&lt
+    >==&gt
+    &==&amp
+    &nbsp空格/&#160
+    )-->
+    https://dev.w3.org/html5/html-author/charref
+
+  <a href="我是链接" download="文件" target="_blank">下载文件</a><!--target属性和download属性只有一个会生效 -->
+
+  <!--网页插入图片-->
+  <img  width="" height="" src="图片路径" alt="">
+  <img srcset="123.png 1x,124.png 2x,134.png 3x" alt=""> <!--根据显示器的不同显示不同清晰度的图片 屏幕越小,但像素点不改变,图片如果被放大,那么图片就越模糊-->
+  <!--alt属性为图片被加载失败时替换的文字-->
+
+  <!--使用usemap属性-->
+  <img src="https://img.alicdn.com/imgextra/i4/O1CN01qI7bkN24oCK2HL3sT_!!6000000007437-0-tps-520-280.jpg" alt="科颜氏" usemap="#map1">
+  <map name="map1">
+    <area title="科颜氏精华露,300" target="_blank" href="http://www.ai.taobao.com/keyanshi" shape="rect(矩形)" coords="895, 118, 1000, 466">
+    <area title="科颜氏保湿霜,300" href="http://www.ai.taobao.com/keyanshi" shape="circle(圆形)" coords="674, 365, 25">
+    <area title="科颜氏爽肤水,300" href="http://www.ai.taobao.com/keyanshi" shape="poly(多边形)" coords="坐标">
+  </map>
+
+  <marquee>跑马灯</marquee>
+
+  <pre>
+    <!--可以用来展示代码,不破坏格式-->
+    <code>
+      <!--放置代码区域-->
+    </code>
+  </pre>
+
+  <!--有序列表<ol>和无序列表<ul>-->
+  <ol>
+    <!--列表里不能直接放其他标签,需要被<li>标签包裹-->
+    <li>阿萨德</li>
+    <li>收到货</li>
+    <li>实打实</li>
+  </ol>
+
+  <ul>
+    <li>圣诞节的话</li>
+    <li>shdfh</li>
+    <li>kshdfd</li>
+  </ul>
+
+  <!--描述列表<dl>-->
+  <dl>
+    <dt>导演:</dt>
+    <dd><a href="dcdj.com">辛吉飞</a></dd>
+    <dt>编剧:</dt>
+    <dd>黄飞</dd>
+  </dl>
+
+  <!--想要给特定的内容加上样式用span标签或div标签
+        相同点:都是没有特定语义的标签
+        不同点:span标签不换行,div标签换行(div标签是块级标签,把标签内的内容包起来)-->
+  库存: <span class="left-count">33</span>
+  <hr /><!--分割标签-->
+  <div>gsdjkljds Lorem, <br />ipsum dolor sit amet consectetur adipisicing elit. Architecto asperiores saepe dolorum cumque corrupti dolore, <br />officia possimus a quis illum reprehenderit eligendi! Commodi odit pariatur similique exercitationem dolorem ratione. Perferendis.</div>
+  <!--br为换行标签-->
+
+<form action="http://www.example.com/register"><!--表单标签头,anction属性表示提交地址-->
+  <input type="text(文本)/password(密码)" required minlength="5" maxlength="10"><!--required表示必填项-->
+  <input type="checkbox" checked >示范<!--默认勾选-->
+  <input type="radio">示范
+
+  年龄: <input type="text" placeholder="input your name"><!--placeholder为占位提示符-->
+
+  <input type="radio" name="gender">男
+  <input type="radio" name="gender">女
+  <input type="radio" name="gender">gay
+
+  <input type="file" accept="image/*, .exe, .txt, .png"><!--帮助筛选可接受文件类型-->
+  <input type="file" autofocuse accept="image/*"><!--筛选所有的图片类型文件-->
+<!--autofocuse为自动指定光标位置-->
+  <input type="file" multiple accept="image/*"><!--支持多选-->
+
+  <input type="hidden" value="foo"><!--隐藏表单值-->
+
+  <input type="button" value="按钮" disabled><!--disabled表示不可使用的属性-->
+  <input type="submit" value="传送">
+  <input type="reset" value="重置">
+
+  <input type="range" max="10" min="0" step="0.5"><!--一个滑条,范围1~5,步长0.5-->
+
+  <input type="color" value="#ffff00" ><!--色框 -->
+
+  <!--type属性的值还可以是week/image/number/email/date/datetime-local/time/url/-->
+</form>
+  <center>居中</center>
+</body>
+<!--
+<自闭和标签  />(单标签)   "/"可以省略
+<自闭和标签>
+mozilla(一个网站 查html 标签的详细用法)
+formate(vscode格式化,用来排版)
+标签有属性 可以有多个属性 <标签 属性="属性值"></标签>
+通用属性
+id
+name
+title
+alt属性 用于图片 当图片加载不出来时描述图片内容
+src 路径属性 添加图片链接
+class设置类名 可以设置多个类名 用空格分隔 相当于一个列表
+style属性 多见于css
+tabindex 可交互属性 让元素可以被锁定  可用来对元素排序
+contendeditable 可被编辑属性
+data-xxxx=""可以自定义的属性
+
+jsbin.com
+
+-->
+
+</html>

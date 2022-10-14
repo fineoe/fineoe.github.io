@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_blank">
+</head>
+
+<body>
+  <h1>lorem</h1>
+  <h2>Lorem, ipsum.</h2>
+  <h3>Lorem, ipsum dolor.</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorum unde ipsum commodi accusantium nihil
+    quia distinctio eius ipsa. Mollitia necessitatibus, maiores dolorum fugit labore illo repellat! Ullam, corporis
+    tempore.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit alias et provident qui optio nobis mollitia,
+    dolorem delectus dignissimos obcaecati at, sequi cum aliquid laudantium voluptatibus, incidunt facere ea voluptatem!
+  </p>
+
+  <a href="http://www.jd.com" target="_blank">在新窗口打开京东</a>
+  <a href="mailto:2206553304@qq.com" target="_blank">点击给我发送邮件</a>
+  <!-- <a href="tel:10086">拨号</a> -->
+  <a href="" target="_self">跳转到本页的底部</a>
+  <a href="./index.html" download="index.html">点我可以下载一个文件</a><br>
+
+  <img src="https://www.baidu.com/favicon.ico" alt="我是一张图片">
+  <hr>
+  <em>这几种强调</em><strong>有什么</strong>&#160;<b>区别呢?</b>&#160;<u>这个呢? </u><i>这个呢?</i><br>
+  <p>&lt;!--这段注释需要显示在页面里面--&gt;</p>
+  <p>html的注释怎么写?</p>
+  下面是一段Javascript代码,最适合用何种标签表示呢?
+  <pre>
+      <code>
+        function a(){
+          return 8
+        }
+      </code>
+    </pre>
+  <hr>
+
+  <ul>
+    <li>小学
+      <ol>
+        <li>一年级
+          <ol>
+            <li>上学期</li>
+            <li>下学期</li>
+          </ol>
+        </li>
+        <li>二年级</li>
+        <li>三年级</li>
+      </ol>
+    </li>
+    <li>中学</li>
+    <li>大学</li>
+  </ul>
+  <hr>
+
+  <dl>
+    <dt>班级</dt>
+    <dd>三年二班</dd>
+
+    <dt>老师</dt>
+    <dd>李老师</dd>
+    <dd>王老师</dd>
+
+    <dt>学生</dt>
+    <dd>小明</dd>
+    <dd>豆豆</dd>
+  </dl>
+  <hr>
+
+
+  <form action="">
+    <fieldset>
+      <legent>个人信息</legent>
+      <input type="text">
+      <input type="text">
+      <input type="text">
+    </fieldset>
+  </form>
+
+  <form action="https://www.google.com/search">
+    <h3>Google搜索</h3>
+    <select name="city"><!--multiple多选属性  size属性控制显示选项数量(size="8")-->
+      <option value="0000">湖北</option><!--还有select属性默认被选中/disabled不可选/hidden默认隐藏-->
+      <option value="0001">湖南</option>
+      <option value="0011">成都</option>
+      <option value="011111111">重庆</option>
+<!--分组选项-->
+      <optgroup label="湖北" >
+        <option value="123">武汉</option>
+        <option value="125">孝感</option>
+        <option value="128">恩施</option>
+      </optgroup>
+      <optgroup label="湖南" >
+        <option value="123">长沙</option>
+        <option value="125">晴沙</option>
+        <option value="128">十里八</option>
+      </optgroup>
+    </select>
+    <!--多行文本框-->
+    <textarea name="留言" cols="30" rows="10">默认显示的内容请写在这里</textarea>
+    <!--单行文本框-->
+    <input type="text" placeholder="请输入想要搜索的内容" name="q">
+    <input type="submit" value="在新窗口打开">
+    <hr />
+    <dl>
+      <dt>个人信息调查表</dt>
+      <dt>性别</dt>
+      <dd>
+        <input type="radio" name="render" id="male"><label for="male">男</label>
+        <input type="radio" name="render" id="famale"><label for="famale">女</label>
+        <!-- <label><input type="radio" name="render">男</label> 
+              lable标签让文字和框关联起来,点字可以选择-->
+      </dd>
+      <dt>年龄</dt>
+      <dd>
+        <input type="number" placeholder="请选择" min="1">
+      </dd>
+      <dt>生日</dt>
+      <dd>
+        <input type="date">
+      </dd>
+      <dt>生辰</dt>
+      <dd>
+        <input type="">
+      </dd>
+      <dt>照片</dt>
+      <dd>
+        <label><input type="file" accept="image/*" hidden>点我上传照片,我比文件上传按钮好看</label>
+      </dd>
+      <dt>肤色</dt>
+      <dd>
+        <input type="color" value="#000000">
+      </dd>
+      <dt>自我介绍</dt>
+      <dd>
+        <input type="text">
+      </dd>
+    </dl>
+  </form>
+  <hr />
+
+  <!--表格-->
+  <table border="1">
+    <caption>成绩单</caption><!--标题-->
+    <thead><!--表头-->
+      <tr>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>成绩</th>
+      </tr>
+      <tr>
+        <th>number</th>
+        <th>name</th>
+        <th>score</th>
+      </tr>
+    </thead>
+    <tbody><!--表内容-->
+      <tr>
+        <th>1</th>
+        <th>张三</th>
+        <th>95</th>
+      </tr>
+    </tbody>
+    <tfoot><!--表尾-->
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <hr>
+  <table border="1">
+    <tbody>
+      <tr>
+        <td>11111111</td>
+        <td>11111111</td>
+        <td>11111111</td>
+        <td>11111111</td>
+        <td>11111111</td>
+      </tr>
+      <tr>
+        <td>2222</td>
+        <td colspan="3" rowspan="2">222</td>
+        <td rowspan="4">222</td>
+      </tr>
+      <tr>
+        <td>2222</td>
+      </tr>
+      <tr>
+        <td rowspan="3" colspan="2">2222</td>
+        <td>2222</td>
+        <td>2222</td>
+      </tr>
+      <tr>
+        <td>2222</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>2222</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>2222</td>
+        <td></td>
+        <td></td>
+        <td rowspan="3"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>2222</td>
+        <td colspan="2"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>2222</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>2222</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

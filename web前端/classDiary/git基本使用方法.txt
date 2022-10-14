@@ -1,0 +1,28 @@
+git init初始化
+git add .添加待提交任务(添加到仓库缓存区)
+git status Git文档的状态
+git commit - m "first version"提交任务
+git log显示已提交版本
+git diff(对于修改版本和原来的版本也就是缓冲区版本哪里修改了)
+git add 文件名 -p(可以将不同的修改分次提交)
+git config --global core.editor "code --wait"(修改默认的编译器)
+git show (commit名称) 用来查看某一次修改的详细
+git remote --verbose(查看远程仓库)
+git remote add 远程仓库名 仓库链接
+git push -u 远程仓库名 master(绑定该仓库, 默认push到该仓库)
+master为分支
+
+github page
+https://fineoe.github.io/git2020/hello.html
+
+git --version(查看git版本号)
+git remote -v(查看远程仓库信息)
+git remote remove 仓库名(删除远程仓库)
+git remote set-url 仓库名 仓库新地址(修改仓库地址)
+
+git clone 仓库地址(eg:https://github.com/fineoe/fineoe.github.io)
+下载仓库
+
+git pull 把远程仓库和本地仓库合并一下
+
+

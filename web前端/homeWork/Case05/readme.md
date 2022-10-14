@@ -46,4 +46,6 @@ how to propose bugfixes and imprppvements,and how to build and test your changes
 #  Good First Issues
 To help you get your feet wet and get you familiar with our contribution process,we have a list of [good first issues]() that contain bugs yaht have a relatively limited scope.This is a great place to get started.
 # License
-React is [MIT licensed]()
+React is [MIT licensed]().
+
+
