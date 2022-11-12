@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      background: rgba(0,0,0,0.1);
+    }
+    body {
+      margin: 20px;
+    }
+    section {
+      background: red;
+      min-width: 600px;
+      margin: 16px 0;
+    }
+    section p {
+      margin: auto;
+      width: 600px;
+    }
+    main {
+      border: 1px solid black;
+      margin: auto;
+      padding: 0 10px;
+      max-width: 600px;
+      box-sizing: border-box;
+    }
+    main p:last-child {
+      height: 4em;
+      xline-height: 1.3em;
+      overflow: auto;
+    }
+
+    main div {
+      background: violet;
+      height: 50px;
+
+    }
+
+    main div:hover {
+      width: 600px;
+      margin-left: -11px;
+    }
+    
+    div.up {
+      border: 50px solid orange;
+      width: 0;
+      margin: auto;
+      border-color: transparent transparent orange
+      transparent;
+      border-width: 0 50px 50px;
+    }
+    div.down {
+      border: 50px solid orange;
+      width: 0;
+      margin: auto;
+      border-color: orange transparent transparent 
+      transparent;
+      border-width: 50px 50px 0 50px;
+    }
+
+  </style>
+</head>
+<body>
+  <section>
+    <p>aaaa</p>
+  </section>
+  <main>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorum labore, natus earum nisi id placeat recusandae aliquam nam. Repellendus est nulla, reprehenderit reiciendis culpa ea distinctio dolor rerum? Vel.
+    </p>
+    <div></div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam eos aliquid provident velit doloremque eveniet perferendis, delectus temporibus quae officiis, aspernatur, dolorem tempore fugit! Doloremque totam pariatur quasi consequuntur in.</p>
+  </main>
+  <div class="up"></div>
+  <div class="down"></div>
+</body>
+</html>
