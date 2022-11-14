@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    x* {
+    * {
       background: rgba(0,0,0,0.1);
     }
     body {
@@ -17,6 +17,12 @@
       padding:0 calc(50% - 300px);
       background: black;
       color:white;
+    }
+    main {
+      xborder: 3px solid red;
+      width: 600px;
+      margin: auto;
+      overflow: hidden;
     }
     .main {
       width: 600px;
@@ -57,14 +63,17 @@
       margin-top: -220px;
     }
     .bbbb {
-      margin:auto;
-      width: 600px;
+      xmargin:auto;
+      xwidth: 600px;
       list-style: none;
       padding:0;
       /* word-spacing: -4px; */
       font-size:0;
       /* text-align: justify;
       text-align-last: justify; */
+      margin-left: -15px;
+      margin-right: -15px;
+      
     }
     .bbbb > li {
       font-size:initial;
@@ -73,12 +82,14 @@
       width: 180px;
       height: 40px;
       box-sizing: border-box;
-      margin-bottom: 15px;
+      xmargin-bottom: 15px;
       text-align: center;
       line-height: 34px;
+      margin: 8px 15px;
+      
     }
 
-    .bbbb > li:nth-child(3n + 1){
+    /* .bbbb > li:nth-child(3n + 1){
       margin-right: 30px;
     }
     .bbbb > li:nth-child(3n + 2){
@@ -86,16 +97,22 @@
     }
     .bbbb > li:nth-last-child(-n + 3) {
       margin-bottom: 0;
-    }
+    } */
     .cccc {
       padding: 0;
       list-style: none;
       width: 600px;
       margin-left: auto;
       margin-right: auto;
+      overflow: hidden;
+      /* 触发bfc,让ul包住margin-box */
     }
-    .cccc li:nth-child(-n + 4){
+    /* .cccc li:nth-child(-n + 4){
       border-bottom: 2px dotted black;
+    } */
+    .cccc li {
+      border-bottom: 2px dotted black;
+      margin-bottom: -2px;
     }
     .bottom {
       background: violet;
@@ -107,42 +124,56 @@
   <div class="header">hello world 请调整浏览器窗口大小查看效果</div>
   <main>
     <p class="main">页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px</p>
+    <ul class="aaaa">
+      <li class="a">宽180高40(包含边框)</li>
+      <li class="a">水平间隙30px</li>
+      <li class="a">垂直间隙15px</li>
+      <li class="a">边框宽度3px</li>
+      <li class="b">产品</li>
+      <li class="b">产品</li>
+      <li class="b">产品</li>
+      <li class="b">产品</li>
+      <li class="c">产品</li>
+      <li class="c">产品</li>
+      <li class="c">产品</li>
+      <li class="c">产品</li>
+    </ul>
+    <style>
+      .first {
+        overflow: hidden;
+      }
+      .second {
+        margin: -8px 0;
+      }
+    </style>
+    <div class="first">
+      <div class="second">
+        <ul class="bbbb">
+          <li>Lorem.</li>
+          <li>In.</li>
+          <li>A?</li>
+          <li>Voluptatem?</li>
+          <li>Animi?</li>
+          <li>Aliquam.</li>
+          <li>Accusantium.</li>
+          <li>Adipisci!</li>
+          <li>Itaque!</li>
+          <li>Quaerat!</li>
+          <li>Suscipit.</li>
+          <li>Illum.</li>
+        </ul>
+      </div>
+    </div>
+    <ul class="cccc">
+      <li>link</li>
+      <li>link</li>
+      <li>link</li>
+      <li>link</li>
+      <li>link</li>
+    </ul>
   </main>
-  <ul class="aaaa">
-    <li class="a">宽180高40(包含边框)</li>
-    <li class="a">水平间隙30px</li>
-    <li class="a">垂直间隙15px</li>
-    <li class="a">边框宽度3px</li>
-    <li class="b">产品</li>
-    <li class="b">产品</li>
-    <li class="b">产品</li>
-    <li class="b">产品</li>
-    <li class="c">产品</li>
-    <li class="c">产品</li>
-    <li class="c">产品</li>
-    <li class="c">产品</li>
-  </ul>
-  <ul class="bbbb">
-    <li>Lorem.</li>
-    <li>In.</li>
-    <li>A?</li>
-    <li>Voluptatem?</li>
-    <li>Animi?</li>
-    <li>Aliquam.</li>
-    <li>Accusantium.</li>
-    <li>Adipisci!</li>
-    <li>Itaque!</li>
-    <li>Quaerat!</li>
-    <li>Suscipit.</li>
-    <li>Illum.</li>
-  </ul>
-  <ul class="cccc">
-    <li>link</li>
-    <li>link</li>
-    <li>link</li>
-    <li>link</li>
-    <li>link</li>
-  </ul>
   <div class="bottom">&copy;版权所有<br>本页所有的布局均使用块元素</div>
 </body>
+<!-- css reset 可以将很多的相同的代码用一份重置css布局
+Normalize.css -->
 </html>
